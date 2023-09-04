@@ -1,0 +1,9 @@
+It needs to be clear on which functions print immediately, which return a value, and which sort thew result in another collection.
+
+For example:
+
+
+I'm trying to finish the java project and am a little confused about these last functions. For each user input, say the user invokes is_present() or something, should the sample printout on the document be printed immediately or only be printed when the user then calls print_query_list() and print_count()?  
+Part of my confusion is because the query may be of different types, maybe an ArrayList or boolean value, thus I'm not 100% sure how to deal with it.
+
+Great question. The result should be held until the "print" functions do exactly that. You are correct, there will be different "result holders" that you will need to use.
